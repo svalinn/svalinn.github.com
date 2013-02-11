@@ -36,7 +36,7 @@ Geometry & Mesh Manipulation Tools
 Multi-Physics and Hybrid Workflows
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-* R2S
+* `R2S Activation <http://svalinn.github.com/r2s-act>`_
 * R2SA
 * Hybrid accelerations
 
