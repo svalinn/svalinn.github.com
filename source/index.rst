@@ -20,10 +20,7 @@ Single Physics Analysis Tools
      * Documentation
 * DAGMC: Software toolkit for CAD-based Monte Carlo Radiation Transport
      * `Overview <http://svalinn.github.com/DAGMC>`_
-     * `Documentation <http://svalinn.github.com/DAGMC/doc/usersguide/>`_
-     * DAG-MCNP5 Implementation
-            * patch file and build script
-            * Documentation
+     * `Users Guide <http://svalinn.github.com/DAGMC/usersguide/>`_
 
 
 Geometry & Mesh Manipulation Tools
