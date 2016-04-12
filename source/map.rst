@@ -27,8 +27,9 @@ enough particles are simulated using independent sequences of pseudo-random
 numbers, then their mean behavior can be taken as representative of the real
 system.  The single biggest advantage of Monte Carlo radiation transport is
 its ability to model the entire phase space of radiation transport (space,
-direction and energy) as continuous.  Continuous modeling of space allows for
-arbitrarily complex geometric models with need for approximation.  Taken
+direction and energy) as continuous variables.  Continuous modeling of space
+allows for
+arbitrarily complex geometric models with no need for approximation.  Taken
 together with continuous treatment of direction, this also means that
 following particles through complex streaming paths is also possible with
 these methods.  Finally, continuous treatment of energy allows less
@@ -110,9 +111,14 @@ tools are ORIGEN (ORNL), FISPACT (CCFE), and CINDER (LANL).  ALARA (UW) is a
 special purpose activation tool that solves for multiple points in space
 simultaneously.
 
+Advanced Capabilities
+---------------------
+
+In recent years, attempts to analyze the most challenging radiation shielding problems have resulted in more advanced capabilities beyond the fundamental concepts and tools above.  In some cases, the details of complex shielding goeomtries emerged as the most complex aspect of assessing shielding performance, necessitating support for CAD-based analysis.  The reliance on Monte Carlo modeling for thick shielding problems also cast a focus on variance reduction techniques, and in conjunction with complex gometries, it became necessary to automate the process of generating paramters for variance reduction.
+
 
 Geometry Representations and CAD-based Analysis
--------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++
 
 Since the early 2000's, a number of different teams have pursued the ability
 to perform radiation transport and activation on geometries that are based on
@@ -148,7 +154,7 @@ automatable and benefits greatly from experience working with previous models
 for this purpose.
 
 Automated Variance Reduction Techniques
-----------------------------------------
++++++++++++++++++++++++++++++++++++++++
 
 As indicated above, Monte Carlo radiation transport can be challenged by
 problems that involve deep penetration of thick shields, a characteristic of
@@ -185,7 +191,8 @@ A basic radiation transport calculation can be configured to provide a variety
 of nuclear responses in addition to the neutron flux distribution.  These
 responses must be linear combinations of the neutron fluxes, typically based
 on cross-sections or similar nuclear data.  It is common to estimate radiation
-damage, in terms of displacements per atom as well as gas production, as well
+damage, in terms of displacements per atom as well as 
+hydrogen (H) and helium (He) gas production, as well
 as heating from neutron and photon radiation.  In fusion systems, it is also
 of interest to estimate the number of tritium atoms that are produced in
 breeding regions.
@@ -243,3 +250,19 @@ Additional expertise:
 
 Experimental work is underway (ORNL/UW) to determine how to best use automated
 variance reduction for the neutron transport step.
+
+Activation of Flowing Systems
++++++++++++++++++++++++++++++
+
+In some cases, acitvation of liquids that flow throughout the system becomes a substantial issue for assessing the radiation environment.  Most commonly, those liquids are coolants used to remove heat, but they can fill other roles.  Analysis of these sytems requires tools and capabilities beyond normal activation analysis.  The flowpath of the coolant must be analyzed to determine the residence time in different irradiation environments.  These neutron fluxes and residence times for each control volume must then be combined in an activation analysis tool that permits the modeling of potentially arbitrary irradiation schedules.
+
+Basic expertise:
+
+* Monte Carlo radiation transport, usually MCNP5/6.  
+* Activation analysis using FISPACT, ALARA, or ORIGEN
+
+Additional expertise:
+
+* Activation in complex irradiation histories with varying flux spectrums and
+  irradiation times
+* Fluid dynamics simulation of flow through complex structures
