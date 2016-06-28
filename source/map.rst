@@ -198,12 +198,17 @@ of interest to estimate the number of tritium atoms that are produced in
 breeding regions.
 
 Increasingly, these analyses rely on CAD-based geometries to define the
-original geometry.  In addition, most of these analyses benefit from the use
-of automated variance reduction techniques.
+original geometry.  In addition, when relying on Monte Carlo radiation transport, 
+most of these analyses benefit from the use
+of automated variance reduction techniques.  Finally, results tabulated on 
+high-fidelity mesh are frequently used as the source term for other physics analysis.
+For example, high fidelity nuclear heating results may be used to drive 
+thermo-mechanical analysis.
 
 Basic expertise: 
 
-* Monte Carlo radiation transport, usually MCNP5/6.  
+* Monte Carlo radiation transport, usually MCNP5/6, or
+* Discrete ordinates radiation transport, such as ATTILA
 
 Additional expertise: 
 
@@ -234,14 +239,15 @@ decomposition of the neutron flux results and photon source results.
 In most cases, a large mesh is used for both distributions of neutron flux and
 consequent photon sources, and perhaps a different mesh for the photon dose
 distribution.  This results in up to 1 million separate activation calculation
-points, and thus requires automation to be tractable.  An automated R2S
+points, and thus requires automation to be tractable.  A semi-automated R2S
 approach has been implemented robustly as part of the PyNE toolkit, coupling
 MCNP to ALARA, with support for CAD-based geometries.
 
 Basic expertise: 
 
-* Monte Carlo radiation transport, usually MCNP5/6.  
-* Activation analysis using FISPACT, ALARA, or ORIGEN
+* Monte Carlo radiation transport, usually MCNP5/6, with  
+* Activation analysis using FISPACT, ALARA, or ORIGEN, or
+* Discrete ordinates radiation transport with internal transmutation, such as ATTILA.
 
 Additional expertise: 
 
@@ -266,3 +272,16 @@ Additional expertise:
 * Activation in complex irradiation histories with varying flux spectrums and
   irradiation times
 * Fluid dynamics simulation of flow through complex structures
+
+
+Resource Needs
+---------------
+
+As the fidelity and complexity of models has increased the computational
+resource requirements have also grown.  Virtually all of the fundamental
+tools, advanced capabilities, and analysis types requires 1000s or 10,000s of
+cpu-hours for each calculation.  For deterministic radiation transport and
+some applications of Monte Carlo radiation transport, this requires parallel
+computing clusters with high-performance network interconnects.  Other
+applications of Monte Carlo radiation transport, simple require access to a
+large number of computers whether local or cloud resources.
