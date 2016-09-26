@@ -49,13 +49,12 @@ contributions.  While it is possible to simply increase the total number of
 simulated particles, a number of schemes have been introduced, collectively
 known as *variance reduction* techniques to help improve this situation.
 
-The most widely used tool for Monte Carlo radiation transport is:
-
-* MCNP (Monte Carlo N-Particle), versions 5 and 6, written & maintained by Los
-  Alamos National Laboratory.
-
-While other tools exist, their user-base is dwarfed by that of MCNP: Fluka (CERN)
-Geant4 (CERN), Monaco (ORNL), SHIFT (ORNL), Tripoli (CEA).
+The most widely used tool for Monte Carlo radiation transport in neutron-based
+systems (e.g. fission, fusion, some accelerators) is MCNP (Monte Carlo
+N-Particle), versions 5 and 6, written & maintained by Los Alamos National
+Laboratory.  Many other tools exist and some see larger usage in other kinds
+of systems, particularly high energy physics: Fluka (CERN) Geant4 (CERN),
+Monaco (ORNL), SHIFT (ORNL), Tripoli (CEA).
 
 Discrete Ordinates Radiation Transport
 +++++++++++++++++++++++++++++++++++++++
@@ -87,7 +86,7 @@ extend beyond their developer communities include:
 * PARTISN (LANL)
 * DORT/TORT (ORNL)
 * Attila (Varian)
-* Exnihilo (ORNL)
+* Exnihilo/Denovo (ORNL)
 
 Activation Analysis
 +++++++++++++++++++++
@@ -191,9 +190,9 @@ A basic radiation transport calculation can be configured to provide a variety
 of nuclear responses in addition to the neutron flux distribution.  These
 responses must be linear combinations of the neutron fluxes, typically based
 on cross-sections or similar nuclear data.  It is common to estimate radiation
-damage, in terms of displacements per atom as well as 
+damage in terms of displacements per atom and 
 hydrogen (H) and helium (He) gas production, as well
-as heating from neutron and photon radiation.  In fusion systems, it is also
+as heating from neutrons and various secondary particles.  In fusion systems, it is also
 of interest to estimate the number of tritium atoms that are produced in
 breeding regions.
 
