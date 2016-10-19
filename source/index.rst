@@ -7,10 +7,10 @@ the same way, fusion shielding is necessary to protect the system's
 components from the radiation produced by the fusion system they are
 supporting.
 
-This project includes a variety of tools, methodologies and workflows
-that are relevant for the nuclear analysis of complex system,
-including fusion power plant designs, accelerator irradiation
-facilities and critical reactor systems.
+This project includes a variety of `tools, methodologies and workflows
+<map.html>`_ that are relevant for the nuclear analysis of complex system,
+including fusion power plant designs, accelerator irradiation facilities and
+critical reactor systems.
 
 Single Physics Analysis Tools
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
