@@ -16,7 +16,7 @@ Single Physics Analysis Tools
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 * ALARA: Activation and Isotopic Inventory Analysis
-     * `Documentation <http://alara.engr.wisc.edu/>`_
+     * `Documentation <http://svalinn.github.io/ALARA/>`_
 
 * DAGMC: Software toolkit for CAD-based Monte Carlo Radiation Transport
      * `Overview <http://svalinn.github.com/DAGMC>`_
