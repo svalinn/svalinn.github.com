@@ -1,35 +1,36 @@
 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Svalinn Radiation Shielding Analysis Toolkit &mdash; Svalinn</title>
-    
+    <title>Svalinn Radiation Shielding Analysis Toolkit &#8212; Svalinn</title>
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '0.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Svalinn" href="#" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
   </head>
   <body> 
 <div id="page-div" class="page">
-<div id="header"><a id="uwhome" href="http://www.wisc.edu"><img src="/DAGMC/_static/images/wordmark.gif" alt="University of Wisconsin–Madison" width="260" height="11" /></a> <a id="crest" href="http://www.wisc.edu"><img src="/DAGMC/_static/images/crest.png" alt="" width="70" height="106" /></a>
-    <h1 id="siteTitle"><a href="/"><span>Svalinn</span></a></h1>
+<div id="header">
+    <a id="uwhome" href="http://www.wisc.edu"><img src="_static/images/wordmark.gif" alt="University of Wisconsin–Madison" width="260" height="11" /></a> 
+    <a id="crest" href="http://www.wisc.edu"><img src="_static/images/crest.png" alt="" width="70" height="106" /></a>
+    <h1 id="siteTitle"><a href="#"><img src="_static/images/logo.png" alt="" height="50x" /><span>Svalinn</span></a></h1>
     <div id="tagline"><span>Radiation Shielding Analysis Toolkit</span></div>
     <ul id="globalnav">
       <li id="uwsearch"><a href="http://www.wisc.edu/search/">UW Search</a></li>
@@ -52,7 +53,9 @@
 
     <div id="nav" class="main-menu-container">
       <ul id="menu-main" class="sf-menu">
+        <li class="menu-item"><a href="http://cnerg.github.io">CNERG</a></li>
         <li class="menu-item"><a href="#">Svalinn</a></li>
+        <li class="menu-item"><a href="DAGMC">DAGMC</a></li>
         <li class="menu-item" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a>
@@ -61,8 +64,15 @@
     </div>
   <div id="c_container"> 
 <div id="sidebar">
- <div id="sidebar_section"></div>
- <div id="sidebar_section"> </div>
+ <div id="sidebar_section"><ul>
+<li><a class="reference internal" href="#">Svalinn Radiation Shielding Analysis Toolkit</a><ul>
+<li><a class="reference internal" href="#single-physics-analysis-tools">Single Physics Analysis Tools</a></li>
+<li><a class="reference internal" href="#geometry-mesh-manipulation-tools">Geometry &amp; Mesh Manipulation Tools</a></li>
+<li><a class="reference internal" href="#multi-physics-and-hybrid-workflows">Multi-Physics and Hybrid Workflows</a></li>
+</ul>
+</li>
+</ul>
+ </div>
 </div> 
     <div id="content" class="inline-block">
           <div class="post">
@@ -71,7 +81,7 @@
 <h1>Svalinn Radiation Shielding Analysis Toolkit<a class="headerlink" href="#svalinn-radiation-shielding-analysis-toolkit" title="Permalink to this headline">¶</a></h1>
 <p>In Norse mythology, Svalinn was a shield that protected the horses
 that pulled the sun across the sky from the heat of that sun. In much
-the same way, fusion shielding is necessary to protect the system&#8217;s
+the same way, fusion shielding is necessary to protect the system’s
 components from the radiation produced by the fusion system they are
 supporting.</p>
 <p>This project includes a variety of tools, methodologies and workflows
@@ -80,19 +90,18 @@ including fusion power plant designs, accelerator irradiation
 facilities and critical reactor systems.</p>
 <div class="section" id="single-physics-analysis-tools">
 <h2>Single Physics Analysis Tools<a class="headerlink" href="#single-physics-analysis-tools" title="Permalink to this headline">¶</a></h2>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>ALARA: Activation and Isotopic Inventory Analysis</dt>
-<dd><ul class="first last simple">
-<li>Overview</li>
-<li>Documentation</li>
+<dd><ul class="first last">
+<li><a class="reference external" href="http://svalinn.github.io/ALARA/">Documentation</a></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>DAGMC: Software toolkit for CAD-based Monte Carlo Radiation Transport</dt>
-<dd><ul class="first last simple">
+<dd><ul class="first last">
 <li><a class="reference external" href="http://svalinn.github.com/DAGMC">Overview</a></li>
 <li><a class="reference external" href="http://svalinn.github.com/DAGMC/usersguide/">Users Guide</a></li>
 </ul>
@@ -103,23 +112,22 @@ facilities and critical reactor systems.</p>
 </div>
 <div class="section" id="geometry-mesh-manipulation-tools">
 <h2>Geometry &amp; Mesh Manipulation Tools<a class="headerlink" href="#geometry-mesh-manipulation-tools" title="Permalink to this headline">¶</a></h2>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>mcnp2cad: Generate CAD representation of MCNP5 input</dt>
-<dd><ul class="first last simple">
+<dd><ul class="first last">
 <li>Documentation</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">mmGridGen</p>
-</li>
+<li>mmGridGen</li>
 </ul>
 </div>
 <div class="section" id="multi-physics-and-hybrid-workflows">
 <h2>Multi-Physics and Hybrid Workflows<a class="headerlink" href="#multi-physics-and-hybrid-workflows" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://svalinn.github.com/r2s-act">R2S Activation</a></li>
+<li><a class="reference external" href="http://pyne.io/usersguide/r2s.html">R2S</a></li>
 <li>R2SA</li>
 <li>Hybrid accelerations</li>
 </ul>
@@ -139,10 +147,10 @@ facilities and critical reactor systems.</p>
         &copy; Copyright 2012, UW CNERG Team.
       </p>
       <p>
-      Last updated on Apr 11, 2016.
+      Last updated on Aug 06, 2019.
       </p>
       <p>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.6.6.
       </p>
     </div>
   </body>
