@@ -19,8 +19,8 @@ Single Physics Analysis Tools
      * `Documentation <http://svalinn.github.io/ALARA/>`_
 
 * DAGMC: Software toolkit for CAD-based Monte Carlo Radiation Transport
-     * `Overview <http://svalinn.github.com/DAGMC>`_
-     * `Users Guide <http://svalinn.github.com/DAGMC/usersguide/>`_
+     * `Overview <http://svalinn.github.io/DAGMC>`_
+     * `Users Guide <http://svalinn.github.io/DAGMC/usersguide/>`_
 
 
 Geometry & Mesh Manipulation Tools
@@ -41,5 +41,5 @@ Multi-Physics and Hybrid Workflows
    :maxdepth: 1
    :hidden:
 
-   DAGMC <http://svalinn.github.com/DAGMC>
+   DAGMC <http://svalinn.github.io/DAGMC>
 
